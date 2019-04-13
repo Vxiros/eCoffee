@@ -1,0 +1,49 @@
+<br><br>
+<td class="td-big" style="width: 10%;">Products</td>
+<br><br><br><br>
+<table class="small-table">
+    <div *ngFor="let product of products">
+      <ul>
+        <th>
+            {{product.id}}
+        </th>
+        <th class= "name-product">
+            {{product.name}}
+        </th>
+      <th>
+            {{product.description}}
+        </th>
+        <th>
+            {{product.tags}}
+        </th>
+        <th>
+            {{product.category}}
+        </th>
+      </ul>
+     </div>
+ 
+</table>
+<table class= "big-table">
+    <thead>
+    <tr>
+      <td class="down-td">Start</td>
+      <td class="down-td">Count</td>
+      <td class="down-td">Total</td>
+      <!-- <td>Products</td> -->
+    </tr>
+  </thead>
+  <tbody>
+
+    <td class="down-td">{{data.start}}</td>
+    <td class="down-td">{{data.count}}</td>
+    <td class="down-td">{{data.total}}</td>
+    <!-- <table class="small-table">
+        <div *ngFor="let product of products">
+          <ul>
+            {{product.id}} , {{product.name}}, {{product.description}}, {{product.tags}}, {{product.category}}
+          </ul>
+         </div>
+     
+    </table> -->
+  </tbody>
+</table>
